@@ -1,3 +1,6 @@
+This is a solver for solving subgraph isomorphism problems.
+Our work is accepted by IJCAI2023 and our improvement is based on the PathLAD solver, 
+
 Files
 -----
 
@@ -14,9 +17,7 @@ Usage
   -t FILE  Input target graph (mandatory)
   -s INT   Set CPU time limit in seconds (default: 60)
   -f       Stop at first solution (default: search for all solutions)
-  -i       Search for an induced subgraph (default: partial subgraph)
   -v       Print solutions (default: only number of solutions)
-  -vv      Be verbose
   -h       Print this help message
 
 Graph format
@@ -27,10 +28,3 @@ Pattern and target graphs should be defined in two text files. The format of the
 - Each following line gives, for each vertex i, the number of successors of i followed by the list of successors of i.
 - Nodes must be numbered from 0 and, if there is an edge from i to j and an edge from j to i, then j must be a successor of i and i must be a successor of j.
 
-For example, the adjacency matrix of the graph defined in file 'pattern.txt' is:
-   0  1  2  3  4
-0: 0  0  0  0  1
-1: 1  0  1  0  0
-2: 0  0  0  1  0
-3: 0  0  0  0  1
-4: 0  1  0  0  0
