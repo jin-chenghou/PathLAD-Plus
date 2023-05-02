@@ -10,20 +10,29 @@ Files
 -----
 
 Makefile: make an executable (main) and test on 2 subgraph isomorphism instances 
+
 allDiff.c compatibility.c graph.c lad.c domains.c main.c: source files
+
 pattern.txt: example of non labelled pattern graph
+
 target.txt: example of target graph
+
 README: this file
 
 Usage
 -----
 
-  -p FILE  Input pattern graph (mandatory)
-  -t FILE  Input target graph (mandatory)
-  -s INT   Set CPU time limit in seconds (default: 60)
-  -f       Stop at first solution (default: search for all solutions)
-  -v       Print solutions (default: only number of solutions)
-  -h       Print this help message
+-p FILE  Input pattern graph (mandatory)
+
+-t FILE  Input target graph (mandatory)
+
+-s INT   Set CPU time limit in seconds (default: 60)
+
+-f       Stop at first solution (default: search for all solutions)
+
+-v       Print solutions (default: only number of solutions)
+
+-h       Print this help message
 
 Graph format
 ------------
