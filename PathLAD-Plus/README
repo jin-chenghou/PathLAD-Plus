@@ -1,3 +1,10 @@
+##Compiling
+
+To build, type 'make'. You will need a GCC compiler.
+
+##Running
+
+./PathLAD-Plus -p pattern.txt -t target.txt -f -s 3600
 
 Files
 -----
